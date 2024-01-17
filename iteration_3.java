@@ -12,7 +12,7 @@ public class iteration {
     }   
 }                                                              */
 
-// 2번 A+B-3
+ /* 2번 A+B-3
 import java.util.Scanner;
 public class iteration_3 {
     public static void main(String[] args) {
@@ -31,5 +31,44 @@ public class iteration_3 {
 			System.out.println(result[i]);
 		}	                        
     }   
-}
-  
+} 												*/		
+
+/*  3번 합 
+import java.util.Scanner;
+public class iteration_3 {
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		int result = 0;
+		for(int i = 0; i <= n; i++) {
+			result += i;
+		}		
+		System.out.println(result);
+		
+    }   
+}      											*/
+
+// 4번 영수증
+import java.util.Scanner;
+public class iteration_3 {
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+		int x = sc.nextInt();
+		int n = sc.nextInt();
+		int price = 0;
+
+		for(int i = 1; i <= n; i++) {
+			int a = sc.nextInt();
+			int b = sc.nextInt();
+			price += a*b;			
+		}
+		if(x == price) {
+			System.out.println("Yes");
+		}	else {
+			System.out.println("No");
+		}		
+		
+    }   
+}      		
