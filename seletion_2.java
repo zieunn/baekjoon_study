@@ -1,3 +1,4 @@
+/* 
 import java.util.Scanner;
 
 public class seletion_2 {
@@ -17,4 +18,4 @@ public class seletion_2 {
 		}
 		
 	}
-}    
+}    			*/
