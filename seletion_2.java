@@ -22,7 +22,7 @@ public class seletion_2 {
 
  /*  2번 : 시험 성적
  import java.util.Scanner;
-public class Main  {
+public class seletion_2  {
 	public static void main(String[] args) {		
 		Scanner sc = new Scanner(System.in);
 		int x = sc.nextInt();
@@ -45,7 +45,7 @@ public class Main  {
 
 /* 3번 : 윤년
 import java.util.Scanner;
-public class Main  {
+public class seletion_2  {
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
@@ -62,7 +62,7 @@ public class Main  {
 
 /* 4번 : 사분면 고르기
 import java.util.Scanner;
-public class Main  {
+public class seletion_2  {
 	public static void main(String[] args) {		
 		Scanner sc = new Scanner(System.in);
 		int x = sc.nextInt();
@@ -88,7 +88,7 @@ public class Main  {
 
 /*   5번 : 알람 시계
 import java.util.Scanner;
-public class Main  {
+public class seletion_2  {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int h = sc.nextInt();
@@ -113,7 +113,7 @@ public class Main  {
 
 /* 6번 : 오븐 시계
 import java.util.Scanner;
-public class Main  {
+public class seletion_2  {
    public static void main(String[] args) {      
       Scanner sc = new Scanner(System.in);
       int a = sc.nextInt();
@@ -131,7 +131,7 @@ public class Main  {
 
 /* 7번 : 주사위 세개
 import java.util.Scanner;
-public class Main  {
+public class seletion_2  {
 	public static void main(String[] args) {		
 		Scanner sc = new Scanner(System.in);
 		int a = sc.nextInt();
@@ -157,3 +157,24 @@ if(a==b && b==c && c==a) {
 		
 	}
 }										*/				
+
+//
+import java.util.Scanner;
+public class seletion_2 {
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+		int t = sc.nextInt();
+		String result[] = new String[t];
+
+		for(int i = 0; i<t; i++) {
+			int a = sc.nextInt();
+			int b = sc.nextInt();
+			result[i] = "Case #" + (i+1)+ ": "+(a+b);
+		}
+		for(int i = 0; i<t; i++) {
+		System.out.println(result[i]);
+		}
+
+    }   
+} 		

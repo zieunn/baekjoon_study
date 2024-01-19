@@ -87,7 +87,7 @@ public class iteration_3 {
 		System.out.println(name + "int");
     }   
 } 									*/
-// 6번 빠른 A+B
+/*  6번 빠른 A+B
 import java.io.*;
 import java.util.*;
 public class iteration_3 {
@@ -107,4 +107,166 @@ public class iteration_3 {
 		   }
 		bw.flush();
     }   
-}
+}											*/
+
+/* 7번 :  A+B-7
+import java.io.*;
+import java.util.*;
+public class iteration_3 {
+    public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+		
+		int t = Integer.parseInt(br.readLine());
+		String result[] = new String[t];
+
+		for(int i = 0; i<t; i++) {
+			StringTokenizer st = new StringTokenizer(br.readLine());
+			int a = Integer.parseInt(st.nextToken());
+			int b = Integer.parseInt(st.nextToken());
+			result[i] = "Case #" + (i+1)+ ": "+(a+b)+"\n";
+		}
+		for(int i = 0; i<t; i++) {
+			bw.write(result[i]);
+		}
+		bw.flush();
+    }   
+}											
+import java.util.Scanner;      //Scanner 이용
+public class seletion_2 {
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+		int t = sc.nextInt();
+		String result[] = new String[t];
+
+		for(int i = 0; i<t; i++) {
+			int a = sc.nextInt();
+			int b = sc.nextInt();
+			result[i] = "Case #" + (i+1)+ ": "+(a+b);
+		}
+		for(int i = 0; i<t; i++) {
+		System.out.println(result[i]);
+		}
+
+    }   
+} 		 */
+
+//8번 : A+B-8
+/* Scanner 이용
+import java.util.Scanner;      
+public class seletion_2 {
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+		int t = sc.nextInt();
+		String result[] = new String[t];
+
+		for(int i = 0; i<t; i++) {
+			int a = sc.nextInt();
+			int b = sc.nextInt();
+			result[i] = "Case #" + (i+1)+ ": "+a+" + "+b+" = "+(a+b);
+		}
+		for(int i = 0; i<t; i++) {
+		System.out.println(result[i]);
+		}
+    }   
+} 	*/
+/* 	BufferedReader 이용
+import java.io.*;
+import java.util.*;
+public class iteration_3 {
+    public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+		
+		int t = Integer.parseInt(br.readLine());
+		String result[] = new String[t];
+
+		for(int i = 0; i<t; i++) {
+			StringTokenizer st = new StringTokenizer(br.readLine());
+			int a = Integer.parseInt(st.nextToken());
+			int b = Integer.parseInt(st.nextToken());
+			result[i] = "Case #" + (i+1)+ ": "+a+" + "+b+" = "+(a+b)+"\n";
+		}
+		for(int i = 0; i<t; i++) {
+			bw.write(result[i]);
+		}
+		bw.flush();
+    }   
+}								*/
+
+
+/*   9번 : 별 찍기-1
+import java.util.Scanner;
+public class iteration_3 {
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+
+		for(int i = 1; i<=n; i++) {
+			for(int j = 1; j<=i; j++){
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+    }   
+}					*/		
+
+/*    10번: 별 찍기-2
+import java.util.Scanner;
+public class iteration_3 {
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		for(int i = 1; i<=n; i++){
+			for(int j = 1; j<=n; j++){
+				if((n-i)>=j) {
+					System.out.print(" ");
+				}else {
+					System.out.print("*");
+				}
+			}System.out.println();
+		}
+
+    }   
+}	 							*/
+
+/*  11번: A+B-5
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+		
+		while(true) {
+			int a = sc.nextInt();
+			int b = sc.nextInt();
+			if(a==0 && b==0){
+				sc.close();
+				break;
+			}
+			System.out.println(a+b);
+	  }
+	}   
+}				*/
+
+
+/* 12번: A+B-4 
+import java.util.Scanner;
+public class iteration_3 {
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+
+		while(sc.hasNextInt()) {
+			int a = sc.nextInt();
+			int b = sc.nextInt();
+			
+			System.out.println(a+b);
+			
+	  }
+	}   
+}					*/
