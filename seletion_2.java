@@ -158,7 +158,7 @@ if(a==b && b==c && c==a) {
 	}
 }										*/				
 
-//
+/* 
 import java.util.Scanner;
 public class seletion_2 {
     public static void main(String[] args) {
@@ -177,4 +177,4 @@ public class seletion_2 {
 		}
 
     }   
-} 		
+} 		*/
