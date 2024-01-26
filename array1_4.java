@@ -208,7 +208,7 @@ public class array1_4 {
         } System.out.println(count);
     }  
 }       */
-// HashSet 이용
+/*  HashSet 이용
 import java.util.HashSet;
 import java.util.Scanner;
 public class array1_4 {
@@ -221,4 +221,60 @@ public class array1_4 {
             h.add(a % 42);
         } System.out.println(h.size());
     }  
+}               */
+
+/*  9번 : 바구니 뒤집기
+import java.util.Scanner;
+public class array1_4 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int m = sc.nextInt();
+        int array[] = new int[n+1];
+
+        for(int i = 1; i <= n; i++) {
+            array[i] = i;
+        }
+        for(int s = 0; s < m; s++) {
+            int i = sc.nextInt();
+            int j = sc.nextInt();
+
+            for (int k = 0; i + k < j - k; k++) {
+                int a = array[i + k];
+                array[i + k] = array[j - k];
+                array[j - k] = a;
+            }
+        }
+        for(int i = 1; i <= n; i++) {
+            System.out.print(array[i] + " ");
+        }
+    }
+}               */
+
+// 10번 : 평균
+import java.util.Arrays;
+import java.util.Scanner;
+public class array1_4 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        double array[] = new double[n];
+
+        for(int i = 0; i < n; i++) {
+            array[i] = sc.nextInt();
+        }
+        Arrays.sort(array);
+        double m = array[n-1];
+        double arr[] = new double[n];
+        double score = 0;
+
+        for(int i =0; i < n; i++) {
+            arr[i] = array[i] / m * 100;
+        }
+
+        for(int i = 0; i < n; i++) {
+            score += arr[i];
+        } 
+        System.out.println(score/n);
+    }
 }
