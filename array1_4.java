@@ -251,7 +251,7 @@ public class array1_4 {
     }
 }               */
 
-// 10번 : 평균
+/*   10번 : 평균
 import java.util.Arrays;
 import java.util.Scanner;
 public class array1_4 {
@@ -277,4 +277,5 @@ public class array1_4 {
         } 
         System.out.println(score/n);
     }
-}
+}           */
+
