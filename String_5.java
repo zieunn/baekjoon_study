@@ -113,5 +113,71 @@ public class String_5 {
     }
 }               */
 
+// 8번 단어의 개수
+/* 
+import java.util.Scanner;
+public class String_5 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
+        int count = 1;
+        s = s.trim();
 
-    
+        if(s.isEmpty()) {
+            count = 0;
+        } else {
+            
+            for(int i = 0; i < s.length(); i++) {
+                if(s.charAt(i) == ' ') {
+                    count += 1;
+                } 
+            }
+        }
+        System.out.println(count);
+        sc.close();
+    }
+}     */
+// StringToenizer 이용
+/* 
+import java.util.Scanner;
+import java.util.StringTokenizer;
+public class String_5 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
+        sc.close();
+        
+        // st에 공백을 기준으로 나눈 토큰들을 st에 저장
+        StringTokenizer st = new StringTokenizer(s, " ");
+        //countTokens() 는 토큰의 개수를 반환
+        System.out.println(st.countTokens());
+    }
+}
+*/
+
+/*  9번 상수
+// StringBuffer 이용
+import java.util.Scanner;
+public class String_5 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String a = sc.next();
+        String b = sc.next();
+        
+        StringBuffer st1 = new StringBuffer(a);
+        StringBuffer st2 = new StringBuffer(b);
+        a = st1.reverse().toString();
+        b = st2.reverse().toString();
+        
+        int value1 = Integer.parseInt(a);
+        int value2 = Integer.parseInt(b);
+        
+        if (value1 > value2) {
+            System.out.println(value1);
+        } else {
+            System.out.println(value2);
+        }
+    }
+}                   
+  */
+  
