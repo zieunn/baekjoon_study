@@ -214,6 +214,7 @@ public class String_5 {
 */
 
 // 11번 그대로 출력하기
+/* 
 import java.util.Scanner;
 public class String_5 {
     public static void main(String[] args) {
@@ -224,3 +225,4 @@ public class String_5 {
         }
     }
 }
+*/
